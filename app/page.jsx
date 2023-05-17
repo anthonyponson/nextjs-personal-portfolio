@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {
@@ -18,16 +19,23 @@ import web3 from '../public/web3.png'
 import web4 from '../public/web4.png'
 import web5 from '../public/web5.png'
 import web6 from '../public/web6.png'
+import { useState } from 'react'
+
+
 
 export default function Home() {
+  const [dark , setDark] = useState(false)
+
   return (
-    <main className='bg-white px-8 md:px-20 lg:px-40'>
+    <>
+   <div className={dark ? 'dark' : ''}> 
+    <main className='bg-white px-8 md:px-20 lg:px-40 dark:bg-gray-900'>
       <section className='min-h-screen'>
         <nav className='py-5 flex justify-between items-center mb-6 md:mb-20'>
-          <h2 className='text-black text-xl font-bold font-mono'>Portfolio</h2>
+          <h2 className='text-black text-xl font-bold font-mono dark:text-white'>Portfolio</h2>
           <ul className='flex items-center'>
             <li>
-              <BsFillMoonStarsFill />
+              <BsFillMoonStarsFill className='cursor-pointer dark:text-teal-400' onClick={() => setDark(!dark)} />
             </li>
             <li>
               <a
@@ -45,16 +53,16 @@ export default function Home() {
           <h2 className='font-mono text-2xl font-bold text-teal-500'>
             Anthony Ponson
           </h2>
-          <h3 className='font-mono text-base font-semibold'>
+          <h3 className='font-mono text-base font-semibold dark:text-white'>
             Web Developer and Designer
           </h3>
-          <p className='leading-6 text-base font-medium py-2 text-center max-w-xl '>
+          <p className='leading-6 text-base font-medium py-2 text-center max-w-xl dark:text-white '>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
             quae, recusandae perferendis nemo totam velit illum placeat.
           </p>
         </div>
 
-        <div className='flex items-center justify-center text-4xl text-gray-600 space-x-3 mt-2'>
+        <div className='flex items-center justify-center text-4xl text-gray-600 space-x-3 mt-2 dark:text-teal-400'>
           <AiFillTwitterCircle />
           <AiOutlineLinkedin />
           <AiFillInstagram />
@@ -185,5 +193,7 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </div>
+    </>
   )
 }
