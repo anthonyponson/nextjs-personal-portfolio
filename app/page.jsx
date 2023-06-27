@@ -1,26 +1,34 @@
 'use client'
 
 import Link from 'next/link'
-import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillInstagram,
-  AiOutlineLinkedin,
-} from 'react-icons/ai'
+  BsFillMoonStarsFill,
+  BsGithub,
+  BsInstagram,
+  BsMailbox,
+  BsPhone,
+} from 'react-icons/bs'
+
+import { AiOutlineLinkedin, AiFillGithub } from 'react-icons/ai'
+import { HiOutlineMail } from 'react-icons/hi'
 
 import Image from 'next/image'
-import user from '../public/dev-ed-wave.png'
-import design from '../public/design.png'
-import code from '../public/code.png'
-import consulting from '../public/consulting.png'
 
-import web1 from '../public/web1.png'
-import web2 from '../public/web2.png'
-import web3 from '../public/web3.png'
-import web4 from '../public/web4.png'
-import web5 from '../public/web5.png'
-import web6 from '../public/web6.png'
+import user from '../public/dev-ed-wave.png'
+
+import about from '../public/about.jpg'
+
+// images for portfolio
+
+import youtube from '../public/react-youtube-clone.png'
+import manageReact from '../public/react-website.png'
+import portfolio1 from '../public/portfolio1.png'
+import reactBudget from '../public/react-vite-budget-app.png'
+import todolist from '../public/js-to-do-list.png'
+import calculator from '../public/js-calculator.png'
+import nextEcom from '../public/next-js-sanity.png'
+import jsBudget from '../public/js-budget-app.png'
+
 import { useState } from 'react'
 
 export default function Home() {
@@ -32,7 +40,7 @@ export default function Home() {
         <main className='bg-white px-8 md:px-20 lg:px-40 dark:bg-gray-900'>
           <section className='min-h-screen'>
             <nav className='py-5 flex justify-between items-center mb-6 md:mb-20'>
-              <h2 className='text-black text-xl font-bold font-mono dark:text-white'>
+              <h2 className='text-black text-xl font-bold font-mono dark:text-teal-500'>
                 Portfolio
               </h2>
               <ul className='flex items-center'>
@@ -44,9 +52,9 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className='bg-gradient-to-r  from-cyan-500 to-teal-500 text-white
+                    href='/resume.pdf'
+                    className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white
                  px-3 py-1 rounded-md ml-4'
-                    href='#'
                   >
                     Resume
                   </a>
@@ -58,20 +66,25 @@ export default function Home() {
               <h2 className='font-mono text-2xl font-bold text-teal-500'>
                 Anthony Ponson
               </h2>
-              <h3 className='font-mono text-base font-semibold dark:text-white'>
+              <h3 className='font-mono text-base font-semibold pt-3 dark:text-white'>
                 Web Developer and Designer
               </h3>
-              <p className='leading-6 text-base font-medium py-2 text-center max-w-xl dark:text-white '>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis quae, recusandae perferendis nemo totam velit illum
-                placeat.
+              <p className='leading-6 text-base font-medium py-2 pt-3 text-center max-w-xl dark:text-white '>
+                As a React fresher front-end developer, I am passionate about
+                creating engaging user interfaces and bringing designs to life.
+                With a strong foundation in React, I am eager to contribute my
+                skills and learn from experienced developers to build innovative
+                web applications.
               </p>
             </div>
 
             <div className='flex items-center justify-center text-4xl text-gray-600 space-x-3 mt-2 dark:text-teal-400'>
-              <AiFillTwitterCircle />
-              <AiOutlineLinkedin />
-              <AiFillInstagram />
+              <a href='https://www.linkedin.com/in/anthony-ponson-0879811a0/'>
+                <AiOutlineLinkedin className='hover:text-teal-400' />
+              </a>
+              <a href='https://github.com/anthonyponson'>
+                <AiFillGithub className='hover:text-teal-400' />
+              </a>
             </div>
 
             <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-6 md:mt-10 overflow-hidden'>
@@ -79,77 +92,189 @@ export default function Home() {
             </div>
           </section>
 
-          <section>
-            {/* left side */}
-            <div className='flex flex-1'>
-              <Image></Image>
+          <section className='py-32'>
+            <div className='flex flex-col space-y-10 justify-between space-x-12 md:space-y-0 md:flex-row'>
+              {/* left side */}
+              <div className='flex'>
+                <Image
+                  className='rounded-s-3xl'
+                  src={about}
+                  height={200}
+                  width={200}
+                />
+              </div>
+
+              {/* right side */}
+
+              <div className='flex flex-col items-center space-y-4'>
+                <h2 className='text-xl text-teal-500 font-bold'>About Me</h2>
+                <p className='max-w-sm text-base font-semibold dark:text-white'>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptates mollitia velit harum eligendi! Voluptas quidem quo
+                  quod minima, velit ducimus.
+                </p>
+              </div>
             </div>
-
-            {/* right side */}
-
-            <div className='flex'></div>
           </section>
 
           <section>
             <div className='text-center'>
-              <h3 className='text-3xl py-1'>Portfolio</h3>
+              <h3 className='text-3xl py-1 text-teal-500 dark:text-teal-500'>
+                Portfolio
+              </h3>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 col-span-2 row-span-3'>
               <div className='basis-1/2 flex-1'>
-                <Image
-                  src={web1}
-                  className='rounded-lg'
-                  width={'100%'}
-                  height={'100%'}
-                />
+                <div className='group relative'>
+                  <Image
+                    src={youtube}
+                    className='rounded-lg'
+                    width={'100%'}
+                    height={'100%'}
+                  />
+                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
+                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                      <BsGithub size={50} className='mx-auto' />
+                      <p className='mt-2'>React website</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               <div className='basis-1/2 flex-1'>
-                <Image
-                  src={web2}
-                  className='rounded-lg'
-                  width={'100%'}
-                  height={'100%'}
-                />
+                <div className='group relative'>
+                  <Image
+                    src={calculator}
+                    className='rounded-lg'
+                    width={'100%'}
+                    height={'100%'}
+                  />
+                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
+                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                      <BsGithub size={50} className='mx-auto' />
+                      <p className='mt-2'>React website</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               <div className='basis-1/2 flex-1'>
-                <Image
-                  src={web3}
-                  className='rounded-lg'
-                  width={'100%'}
-                  height={'100%'}
-                />
+                <div className='group relative'>
+                  <Image
+                    src={nextEcom}
+                    className='rounded-lg'
+                    width={'100%'}
+                    height={'100%'}
+                  />
+                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
+                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                      <BsGithub size={50} className='mx-auto' />
+                      <p className='mt-2'>React website</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               <div className='basis-1/2 flex-1'>
-                <Image
-                  src={web4}
-                  className='rounded-lg'
-                  width={'100%'}
-                  height={'100%'}
-                />
+                <div className='group relative'>
+                  <Image
+                    src={reactBudget}
+                    className='rounded-lg'
+                    width={'100%'}
+                    height={'100%'}
+                  />
+                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
+                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                      <BsGithub size={50} className='mx-auto' />
+                      <p className='mt-2'>React website</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               <div className='basis-1/2 flex-1'>
-                <Image
-                  src={web5}
-                  className='rounded-lg'
-                  width={'100%'}
-                  height={'100%'}
-                />
+                <div className='group relative'>
+                  <Image
+                    src={portfolio1}
+                    className='rounded-lg'
+                    width={'100%'}
+                    height={'100%'}
+                  />
+                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
+                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                      <BsGithub size={50} className='mx-auto' />
+                      <p className='mt-2'>React website</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               <div className='basis-1/2 flex-1'>
-                <Image
-                  src={web6}
-                  className='rounded-lg'
-                  width={'100%'}
-                  height={'100%'}
-                />
+                <div className='group relative'>
+                  <Image
+                    src={todolist}
+                    className='rounded-lg'
+                    width={'100%'}
+                    height={'100%'}
+                  />
+                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
+                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                      <BsGithub size={50} className='mx-auto' />
+                      <p className='mt-2'>React website</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
+          </section>
+
+          <Link
+            href='/gallery'
+            className='flex flex-col justify-center items-center'
+          >
+            <div className='text-center my-10 py-2 px-3 rounded-md text-white font-semibold bg-teal-500 max-w-[50%]'>
+              see more
+            </div>
+          </Link>
+
+          <section>
+            <>
+              <div className='rounded-md mt-5'>
+                <div className='text-center my-4'>
+                  <h3 className='font-semibold text-teal-500'>contact me</h3>
+                </div>
+
+                <div className='flex flex-col justify-center items-center space-x-6 md:flex-row'>
+                  <div
+                    className='flex-1 basis-1/3 h-40 items-center justify-center flex
+                  flex-col bg-gray-900 rounded-t-lg space-y-4 dark:bg-teal-500'
+                  >
+                    <BsPhone size={50} color='white' />
+                    <h2 className='text-white'>7639369679</h2>
+                  </div>
+
+                  <div
+                    className='flex-1 basis-1/3 h-40 items-center justify-center flex
+                  flex-col
+                   bg-gray-900 rounded-t-lg space-y-4 dark:bg-teal-500'
+                  >
+                    <HiOutlineMail size={50} color='white' />
+                    <h2 className='text-white'>antonyponson@gmail.com</h2>
+                  </div>
+
+                  <div
+                    className='flex-1 basis-1/3 h-40 items-center justify-center flex
+                  flex-col bg-gray-900 rounded-t-lg dark:bg-teal-500'
+                  >
+                    <Link href='https://instagram.com/antonyponson' className='flex flex-col items-center justify-center space-y-4'>
+                      <BsInstagram size={50} color='white' />
+                      <h2 className='text-white'>instagram</h2>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </>
           </section>
         </main>
       </div>
