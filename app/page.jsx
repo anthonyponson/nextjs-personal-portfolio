@@ -5,7 +5,6 @@ import {
   BsFillMoonStarsFill,
   BsGithub,
   BsInstagram,
-  BsMailbox,
   BsPhone,
 } from 'react-icons/bs'
 
