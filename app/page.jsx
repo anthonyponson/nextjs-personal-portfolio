@@ -109,9 +109,7 @@ export default function Home() {
               <div className='flex flex-col items-center space-y-4'>
                 <h2 className='text-xl text-teal-500 font-bold'>About Me</h2>
                 <p className='max-w-sm text-base font-semibold dark:text-white'>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptates mollitia velit harum eligendi! Voluptas quidem quo
-                  quod minima, velit ducimus.
+                Hi there! My name is Antony Ponson from Tirunelveli, and I'm a passionate React developer. I recently completed frontend developer course , specializing in web development. I am thrilled to kickstart my career as a React fresher and contribute to exciting projects. My journey with programming started when I discovered my fascination with building user-friendly and interactive web applications. Since then, I have been on a continuous learning path, honing my skills in React, JavaScript, HTML, and CSS. During my studies
                 </p>
               </div>
             </div>
@@ -134,9 +132,10 @@ export default function Home() {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/react-youtube-clone-with-tailwindcss'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>youtube clone</h2>
+                      <p className='mt-2'>React, Vite, TailwindCss, firebase</p>
                     </Link>
                   </div>
                 </div>
@@ -151,9 +150,10 @@ export default function Home() {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/calculator-js'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>javascript calculator</h2>
+                      <p className='mt-2'>HTML, CSS, JavaScript</p>
                     </Link>
                   </div>
                 </div>
@@ -168,9 +168,10 @@ export default function Home() {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/nextjs-ecommerse-with-sanity'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>Ecommerse Website</h2>
+                      <p className='mt-2'>NextJs, sanity, TailwindCss</p>
                     </Link>
                   </div>
                 </div>
@@ -185,9 +186,10 @@ export default function Home() {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/react-budget-app'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>Budget App</h2>
+                      <p className='mt-2'>React, Vite, Tailwindcss</p>
                     </Link>
                   </div>
                 </div>
@@ -202,9 +204,10 @@ export default function Home() {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/personal-portfolio-website'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>Portfolio Website</h2>
+                      <p className='mt-2'>HTML, Css, JavaScript</p>
                     </Link>
                   </div>
                 </div>
@@ -219,14 +222,16 @@ export default function Home() {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/To-Do-List-JavaScript'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>To-DO-List</h2>
+                      <p className='mt-2'>HTML, CSS, JavaScript</p>
                     </Link>
                   </div>
                 </div>
               </div>
             </div>
+
           </section>
 
           <Link
@@ -273,6 +278,7 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
+
               </div>
             </>
           </section>

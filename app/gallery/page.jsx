@@ -17,7 +17,6 @@ import nextEcom from '@/public/next-js-sanity.png'
 import jsBudget from '@/public/js-budget-app.png'
 
 const AboutPage = () => {
-
   const [dark, setDark] = useState(false)
 
   return (
@@ -43,9 +42,10 @@ const AboutPage = () => {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/react-youtube-clone-with-tailwindcss'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>youtube clone</h2>
+                      <p className='mt-2'>React, Vite, TailwindCss, firebase</p>
                     </Link>
                   </div>
                 </div>
@@ -60,9 +60,12 @@ const AboutPage = () => {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/calculator-js'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>
+                        javascript calculator
+                      </h2>
+                      <p className='mt-2'>HTML, CSS, JavaScript</p>
                     </Link>
                   </div>
                 </div>
@@ -77,9 +80,10 @@ const AboutPage = () => {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/nextjs-ecommerse-with-sanity'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>Ecommerse Website</h2>
+                      <p className='mt-2'>NextJs, sanity, TailwindCss</p>
                     </Link>
                   </div>
                 </div>
@@ -94,9 +98,10 @@ const AboutPage = () => {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/react-budget-app'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>Budget App</h2>
+                      <p className='mt-2'>React, Vite, Tailwindcss</p>
                     </Link>
                   </div>
                 </div>
@@ -111,9 +116,10 @@ const AboutPage = () => {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/personal-portfolio-website'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>Portfolio Website</h2>
+                      <p className='mt-2'>HTML, Css, JavaScript</p>
                     </Link>
                   </div>
                 </div>
@@ -128,60 +134,10 @@ const AboutPage = () => {
                     height={'100%'}
                   />
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
+                    <Link href='https://github.com/anthonyponson/To-Do-List-JavaScript'>
                       <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              <div className='basis-1/2 flex-1'>
-                <div className='group relative'>
-                  <Image
-                    src={portfolio1}
-                    className='rounded-lg'
-                    width={'100%'}
-                    height={'100%'}
-                  />
-                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
-                      <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              <div className='basis-1/2 flex-1'>
-                <div className='group relative'>
-                  <Image
-                    src={portfolio1}
-                    className='rounded-lg'
-                    width={'100%'}
-                    height={'100%'}
-                  />
-                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
-                      <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              <div className='basis-1/2 flex-1'>
-                <div className='group relative'>
-                  <Image
-                    src={reactBudget}
-                    className='rounded-lg'
-                    width={'100%'}
-                    height={'100%'}
-                  />
-                  <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
-                    <Link href='https://github.com/anthonyponson/react-manage-lnding-page'>
-                      <BsGithub size={50} className='mx-auto' />
-                      <p className='mt-2'>React website</p>
+                      <h2 className='text-center mt-2'>To-DO-List</h2>
+                      <p className='mt-2'>HTML, CSS, JavaScript</p>
                     </Link>
                   </div>
                 </div>
