@@ -102,22 +102,6 @@ export default function Home() {
             </div>
           </section>
 
-          <section>
-            <div className='grid grid-cols-2 md:grid-cols-5 items-center justify-center pt-28 md:flex-row'>
-              <Image src={html} height={100} width={100} alt='' />
-              <Image src={css} height={100} width={100} alt='' />
-              <Image src={js} height={100} width={100} alt='' />
-              <Image src={tailwind} height={100} width={100} alt='' />
-              <Image src={vite} height={100} width={100} alt='' />
-              <Image src={react} height={100} width={100} alt='' />
-              <Image src={next} height={100} width={100} alt='' />
-              <Image className='rounded-full' src={astro} height={100} width={100} alt='' />
-              <Image src={ui} height={100} width={100} alt='' />
-              <Image src={bootstarp} height={100} width={100} alt='' />
-             
-            </div>
-          </section>
-
           <section className='py-32'>
             <div className='flex flex-col space-y-10 justify-around space-x-12 md:space-y-0 md:flex-row'>
               {/* left side */}
@@ -145,6 +129,29 @@ export default function Home() {
                   have been on a continuous learning path, honing my skills in
                   React, JavaScript, HTML, and CSS. During my studies
                 </p>
+              </div>
+            </div>
+          </section>
+
+          <section className='pb-12'>
+            <div className='flex flex-col items-center justify-center pt-12'>
+              <div className='grid grid-cols-2 justify-center items-center md:grid-cols-5 gap-11'>
+                <Image src={html} height={100} width={100} alt='' />
+                <Image src={css} height={100} width={100} alt='' />
+                <Image src={js} height={100} width={100} alt='' />
+                <Image src={tailwind} height={100} width={100} alt='' />
+                <Image src={vite} height={100} width={100} alt='' />
+                <Image src={react} height={100} width={100} alt='' />
+                <Image src={next} height={100} width={100} alt='' />
+                <Image
+                  className='rounded-full'
+                  src={astro}
+                  height={100}
+                  width={100}
+                  alt=''
+                />
+                <Image src={ui} height={100} width={100} alt='' />
+                <Image src={bootstarp} height={100} width={100} alt='' />
               </div>
             </div>
           </section>
