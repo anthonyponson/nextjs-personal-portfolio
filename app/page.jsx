@@ -136,22 +136,22 @@ export default function Home() {
           <section className='pb-12'>
             <div className='flex flex-col items-center justify-center pt-12'>
               <div className='grid grid-cols-2 justify-center items-center md:grid-cols-5 gap-11'>
-                <Image src={html} height={100} width={100} alt='' />
-                <Image src={css} height={100} width={100} alt='' />
-                <Image src={js} height={100} width={100} alt='' />
-                <Image src={tailwind} height={100} width={100} alt='' />
-                <Image src={vite} height={100} width={100} alt='' />
-                <Image src={react} height={100} width={100} alt='' />
-                <Image src={next} height={100} width={100} alt='' />
+                <Image className='group' src={html} height={100} width={100} alt='' />
+                <Image className='group' src={css} height={100} width={100} alt='' />
+                <Image className='group' src={js} height={100} width={100} alt='' />
+                <Image className='group' src={tailwind} height={100} width={100} alt='' />
+                <Image className='group' src={vite} height={100} width={100} alt='' />
+                <Image className='group' src={react} height={100} width={100} alt='' />
+                <Image className='group' src={next} height={100} width={100} alt='' />
                 <Image
-                  className='rounded-full'
+                  className='rounded-full group'
                   src={astro}
                   height={100}
                   width={100}
                   alt=''
                 />
-                <Image src={ui} height={100} width={100} alt='' />
-                <Image src={bootstarp} height={100} width={100} alt='' />
+                <Image className='group' src={ui} height={100} width={100} alt='' />
+                <Image className='group' src={bootstarp} height={100} width={100} alt='' />
               </div>
             </div>
           </section>
@@ -166,12 +166,14 @@ export default function Home() {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 col-span-2 row-span-3'>
               <div className='basis-1/2 flex-1'>
                 <div className='group relative'>
-                  <Image
-                    src={youtube}
-                    className='rounded-lg'
-                    width={'100%'}
-                    height={'100%'}
-                  />
+                  <div className='rounded-lg '>
+                    <Image
+                      src={youtube}
+                      className='rounded-lg'
+                      width={'100%'}
+                      height={'100%'}
+                    />
+                  </div>
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
                     <Link href='https://github.com/anthonyponson/react-youtube-clone-with-tailwindcss'>
                       <BsGithub size={50} className='mx-auto' />
@@ -186,7 +188,7 @@ export default function Home() {
                 <div className='group relative'>
                   <Image
                     src={calculator}
-                    className='rounded-lg'
+                    className='rounded-lg hover:scale-150 transition-transform'
                     width={'100%'}
                     height={'100%'}
                   />
@@ -295,7 +297,7 @@ export default function Home() {
                 <div className='flex flex-col justify-center items-center space-x-6 md:flex-row'>
                   <div
                     className='flex-1 basis-1/3 h-40 items-center justify-center flex
-                  flex-col bg-gray-900 rounded-t-lg space-y-4 dark:bg-teal-500'
+                  flex-col bg-gray-900 rounded-t-lg space-y-4 dark:bg-teal-500 group'
                   >
                     <BsPhone size={50} color='white' />
                     <h2 className='text-white'>7639369679</h2>
@@ -304,7 +306,7 @@ export default function Home() {
                   <div
                     className='flex-1 basis-1/3 h-40 items-center justify-center flex
                   flex-col
-                   bg-gray-900 rounded-t-lg space-y-4 dark:bg-teal-500'
+                   bg-gray-900 rounded-t-lg space-y-4 dark:bg-teal-500 group'
                   >
                     <HiOutlineMail size={50} color='white' />
                     <h2 className='text-white'>antonyponson@gmail.com</h2>
@@ -312,7 +314,7 @@ export default function Home() {
 
                   <div
                     className='flex-1 basis-1/3 h-40 items-center justify-center flex
-                  flex-col bg-gray-900 rounded-t-lg dark:bg-teal-500'
+                  flex-col bg-gray-900 rounded-t-lg dark:bg-teal-500 group'
                   >
                     <Link
                       href='https://instagram.com/antonyponson'
