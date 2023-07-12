@@ -28,6 +28,17 @@ import calculator from '../public/js-calculator.png'
 import nextEcom from '../public/next-js-sanity.png'
 import jsBudget from '../public/js-budget-app.png'
 
+import html from '../public/html.png'
+import css from '../public/css.png'
+import js from '../public/js.png'
+import tailwind from '../public/tailwind.png'
+import react from '../public/react.png'
+import vite from '../public/vite.svg'
+import next from '../public/next.svg'
+import astro from '../public/astro.png'
+import ui from '../public/ui.png'
+import bootstarp from '../public/bootstrap.svg'
+
 import { useState } from 'react'
 
 export default function Home() {
@@ -91,8 +102,24 @@ export default function Home() {
             </div>
           </section>
 
+          <section>
+            <div className='grid grid-cols-2 md:grid-cols-5 items-center justify-center pt-28 md:flex-row'>
+              <Image src={html} height={100} width={100} alt='' />
+              <Image src={css} height={100} width={100} alt='' />
+              <Image src={js} height={100} width={100} alt='' />
+              <Image src={tailwind} height={100} width={100} alt='' />
+              <Image src={vite} height={100} width={100} alt='' />
+              <Image src={react} height={100} width={100} alt='' />
+              <Image src={next} height={100} width={100} alt='' />
+              <Image className='rounded-full' src={astro} height={100} width={100} alt='' />
+              <Image src={ui} height={100} width={100} alt='' />
+              <Image src={bootstarp} height={100} width={100} alt='' />
+             
+            </div>
+          </section>
+
           <section className='py-32'>
-            <div className='flex flex-col space-y-10 justify-between space-x-12 md:space-y-0 md:flex-row'>
+            <div className='flex flex-col space-y-10 justify-around space-x-12 md:space-y-0 md:flex-row'>
               {/* left side */}
               <div className='flex'>
                 <Image
@@ -108,7 +135,15 @@ export default function Home() {
               <div className='flex flex-col items-center space-y-4'>
                 <h2 className='text-xl text-teal-500 font-bold'>About Me</h2>
                 <p className='max-w-sm text-base font-semibold dark:text-white'>
-                Hi there! My name is Antony Ponson from Tirunelveli, and I'm a passionate React developer. I recently completed frontend developer course , specializing in web development. I am thrilled to kickstart my career as a React fresher and contribute to exciting projects. My journey with programming started when I discovered my fascination with building user-friendly and interactive web applications. Since then, I have been on a continuous learning path, honing my skills in React, JavaScript, HTML, and CSS. During my studies
+                  Hi there! My name is Antony Ponson from Tirunelveli, and I'm a
+                  passionate React developer. I recently completed frontend
+                  developer course , specializing in web development. I am
+                  thrilled to kickstart my career as a React fresher and
+                  contribute to exciting projects. My journey with programming
+                  started when I discovered my fascination with building
+                  user-friendly and interactive web applications. Since then, I
+                  have been on a continuous learning path, honing my skills in
+                  React, JavaScript, HTML, and CSS. During my studies
                 </p>
               </div>
             </div>
@@ -151,7 +186,9 @@ export default function Home() {
                   <div className='hidden group-hover:flex items-center absolute inset-0 justify-center bg-gray-800 bg-opacity-75 text-white rounded-lg'>
                     <Link href='https://github.com/anthonyponson/calculator-js'>
                       <BsGithub size={50} className='mx-auto' />
-                      <h2 className='text-center mt-2'>javascript calculator</h2>
+                      <h2 className='text-center mt-2'>
+                        javascript calculator
+                      </h2>
                       <p className='mt-2'>HTML, CSS, JavaScript</p>
                     </Link>
                   </div>
@@ -230,7 +267,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </section>
 
           <Link
@@ -271,13 +307,15 @@ export default function Home() {
                     className='flex-1 basis-1/3 h-40 items-center justify-center flex
                   flex-col bg-gray-900 rounded-t-lg dark:bg-teal-500'
                   >
-                    <Link href='https://instagram.com/antonyponson' className='flex flex-col items-center justify-center space-y-4'>
+                    <Link
+                      href='https://instagram.com/antonyponson'
+                      className='flex flex-col items-center justify-center space-y-4'
+                    >
                       <BsInstagram size={50} color='white' />
                       <h2 className='text-white'>instagram</h2>
                     </Link>
                   </div>
                 </div>
-
               </div>
             </>
           </section>
